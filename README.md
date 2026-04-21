@@ -57,20 +57,30 @@ Key strategies include:
 
 Below is a high-level overview of the project’s folder organization. This structure is designed to separate documentation, code, experiments, and results for clarity and ease of collaboration. Key model documentation is provided in the `model_info` folder.
 
+
 ```
 capstone_project/
 ├── model_info/
-│   ├── BBO_Capstone_Datasheet.md      # Model datasheet
-│   └── BBO_Capstone_Model_Card.md     # Model card
+│   ├── BBO_Capstone_Datasheet.md
+│   └── BBO_Capstone_Model_Card.md
 ├── notebook/
-│   └── Capstone Consolidated Strategy.ipynb  # Main analysis notebook
+│   └── Capstone Consolidated Strategy.ipynb
 ├── runs/
-│   └── week_1/ ... week_12/           # Experiment outputs by week/function
-├── src/
-│   └── bbo/, utils/                   # Source code modules
-├── tests/
-│   └── test_*.py                      # Unit tests
-└── README.md
+│   ├── week_1/
+│   ├── week_2/
+│   ├── week_3/
+│   ├── week_4/
+│   ├── week_5/
+│   ├── week_6/
+│   ├── week_7/
+│   ├── week_8/
+│   ├── week_9/
+│   ├── week_10/
+│   ├── week_11/
+│   └── week_12/
+├── README.md
+├── .git/
+└── .venv/
 ```
 
 ### Model Documentation
