@@ -52,10 +52,28 @@ Key strategies include:
 - Reflect weekly to adjust plans and update risk register.
 
 ## GitHub Portfolio Strategy
-- To showcase the capstone project and attract attention from recruiters or collaborators, the following approach will be used for releasing and structuring the project on GitHub: 
-- Use of repository https://github.com/antoniusmeliat/capstone_project already shown on LinkedIn
-- Files organisation into folders: /data, /notebooks, /scripts, /results, /docs.
-- Use GitHub Pages/Wiki for polished presentation.
-- Structure code modularly with reusable functions and classes.
-- Use of inline comments.
-- Use of visuals (e.g. confusion matrices) and link to LinkedIn or portfolio to highlight achievements.
+
+## Project Structure
+
+Below is a high-level overview of the project’s folder organization. This structure is designed to separate documentation, code, experiments, and results for clarity and ease of collaboration. Key model documentation is provided in the `model_info` folder.
+
+```
+capstone_project/
+├── model_info/
+│   ├── BBO_Capstone_Datasheet.md      # Model datasheet
+│   └── BBO_Capstone_Model_Card.md     # Model card
+├── notebook/
+│   └── Capstone Consolidated Strategy.ipynb  # Main analysis notebook
+├── runs/
+│   └── week_1/ ... week_12/           # Experiment outputs by week/function
+├── src/
+│   └── bbo/, utils/                   # Source code modules
+├── tests/
+│   └── test_*.py                      # Unit tests
+└── README.md
+```
+
+### Model Documentation
+
+- [Model Datasheet](model_info/BBO_Capstone_Datasheet.md)
+- [Model Card](model_info/BBO_Capstone_Model_Card.md)
