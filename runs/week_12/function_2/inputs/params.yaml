@@ -1,0 +1,51 @@
+# === Acquisition ===
+xi: 0.01
+kappa: 2.3
+
+# === SVM Gating ===
+use_svm: false
+svm_kernel: rbf
+svm_C: 1.0
+svm_high_quantile: 0.65
+svm_keep_frac: 0.40
+
+# === Feature Screening (ARD) ===
+use_feature_screen: false
+ard_rel_threshold: 0.20
+
+# === PCA ===
+use_pca: false
+pca_var_keep: 0.95
+
+# === GP Fit & Stability ===
+#standardize_y: true
+max_fit_points: 2500
+random_state: 0
+
+# === Neural Network Surrogate (unused but preserved) ===
+use_nn: false
+nn_hidden_layers: [128, 128]
+nn_activation: relu
+nn_learning_rate: 1e-3
+nn_weight_decay: 1e-4
+nn_epochs: 150
+nn_ensemble: 4
+
+# === Perturbations ===
+use_perturbations: true
+perturb_rate_base: 0.05
+
+# === Global / Local Sampling ===
+n_global_factor: 8000
+#max_candidates: 20000
+#sample_strategy: "lhs"
+
+# === Trust Region ===
+trust_radius_base: 0.015
+#n_trust_base: 200
+
+# === Batch Prediction ===
+batch_predict_size: 10000
+
+# === Control Flags ===
+improved_last_round: false
