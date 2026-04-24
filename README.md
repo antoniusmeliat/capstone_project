@@ -8,8 +8,8 @@ This project implements a Bayesian Black‑Box Optimisation framework using Gaus
 
 ## Model Documentation
 
-- Model Datasheet  
-- model_info/BBO_Capstone_Model_Card.md  
+- [Model Datasheet](model_info/BBO_Capstone_Datasheet.md)
+- [Model Card](model_info/BBO_Capstone_Model_Card.md) 
 
 These documents provide transparency around assumptions, intended use, limitations, and ethical considerations
 
