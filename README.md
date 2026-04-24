@@ -109,7 +109,7 @@ capstone_project/
 │   ├── BBO_Capstone_Datasheet.md
 │   └── BBO_Capstone_Model_Card.md
 ├── notebook/
-│   └── Capstone Consolidated Strategy.ipynb # Core implementation of the Bayesian optimisation workflow
+│   └── Capstone Consolidated Strategy.ipynb
 ├── runs/
 │   ├── week_1/
 │   ├── week_2/
@@ -123,7 +123,8 @@ capstone_project/
 │   ├── week_10/
 │   ├── week_11/
 │   └── week_12/
-├── README.md
+├── license.md
+└── README.md
 
 ---
 
