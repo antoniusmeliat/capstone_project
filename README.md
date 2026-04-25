@@ -142,6 +142,6 @@ The approach generalises to real‑world ML applications such as hyperparameter 
 
 This project is licensed under the Creative Commons
 Attribution–NonCommercial–NoDerivatives 4.0 International License.
-See the LICENSE file for details.
+See the [LICENSE](LICENSE.md) file for details.
 
 ---
