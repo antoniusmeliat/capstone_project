@@ -103,7 +103,7 @@ These principles reflect real‑world ML systems where uncertainty, cost, and in
 ---
 
 ## Project Structure
-
+```
 capstone_project/
 ├── model_info/
 │   ├── BBO_Capstone_Datasheet.md
@@ -123,9 +123,9 @@ capstone_project/
 │   ├── week_10/
 │   ├── week_11/
 │   └── week_12/
-├── license.md
+├── LICENSE.md
 └── README.md
-
+```
 ---
 
 ## Outcome and Relevance
@@ -135,5 +135,13 @@ This project demonstrates that **Bayesian optimisation is most effective when tr
 **Key take‑away:** performance gains came less from aggressive optimisation and more from disciplined learning, uncertainty management, and strategic restraint.
 
 The approach generalises to real‑world ML applications such as hyperparameter tuning, resource allocation, predictive maintenance, and other optimisation tasks under uncertainty.
+
+---
+
+## License
+
+This project is licensed under the Creative Commons
+Attribution–NonCommercial–NoDerivatives 4.0 International License.
+See the LICENSE file for details.
 
 ---
