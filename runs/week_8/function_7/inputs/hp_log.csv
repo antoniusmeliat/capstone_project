@@ -1,0 +1,2 @@
+timestamp,best_score,learning_rate,weight_decay,hidden_layers,hp_dataset_size,random_state
+2026-01-09T20:34:07.976510Z,-0.25878930665195043,0.00013526887039303607,1.1374834402003901e-05,160-160-160,13,0
