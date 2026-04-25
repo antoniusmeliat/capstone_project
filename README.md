@@ -1,70 +1,115 @@
 # capstone_project
-The capstone project is a crucial part of the Professional Certificate in Machine Learning and Artificial Intelligence programme. It is a significant undertaking and spans multiple modules and is designed to help students apply the concepts and techniques learned throughout the course.
 
-In stage 1 of this project students experiment and test ideas with guided exercises, helping them strengthen their understanding of machine learning methods. It's an opportunity to explore a chosen problem or dataset. Stage 2 is more structured - students work towards developing a fully documented algorithm and model. The project is continuous, with required components in different modules. By the end of the programme, students would have created a portfolio-worthy artefact.
+## TLDR
 
-This project will focus on work or task allocation and explores the use of machine learning to optimize task allocation based on workforce skills, experience, and availability. Inspired by real-world challenges and Kaggle competitions, the goal is to build robust models that improve operational efficiency.
+This project implements a Bayesian Black‑Box Optimisation framework using Gaussian Process surrogate models to make efficient decisions in complex and uncertain settings. The core Jupyter notebook learns iteratively from previous evaluations, balancing exploration and exploitation to identify high‑quality solutions with minimal costly trials in scenarios where brute‑force experimentation would be impractical. The approach evolved over multiple weeks from broad exploration to disciplined confirmation and treats optimisation as a learning process rather than a simple search.
+
+---
+
+## Model Documentation
+
+- [Model Datasheet](model_info/BBO_Capstone_Datasheet.md)
+- [Model Card](model_info/BBO_Capstone_Model_Card.md) 
+
+These documents provide transparency around assumptions, intended use, limitations, and ethical considerations
+
+---
+
+## Overview
+
+This capstone project is a core component of the **Professional Certificate in Machine Learning and Artificial Intelligence** programme. It spans multiple modules and is designed to help students apply machine learning concepts to complex decision‑making problems under uncertainty.
+
+The project explores how **artificial intelligence can support better decisions in environments where trial and error would be too slow or too costly**. It uses **Bayesian Black‑Box Optimisation (BBO)** to learn from previous evaluations and intelligently propose improved candidates. Rather than searching blindly, the system builds a probabilistic understanding of the problem and adapts its behaviour as confidence grows.
+
+This class of optimisation is particularly relevant when evaluations are expensive, noisy, or limited, such as hyperparameter tuning, resource allocation, system design, and other real‑world ML optimisation tasks.
+
+---
+
+## Project Context and Stages
+
+The capstone is structured across two main stages:
+
+- **Stage 1: Exploration and experimentation**  
+  Students test ideas through guided exercises to strengthen understanding of optimisation behaviour and uncertainty.
+
+- **Stage 2: Structured development and refinement**  
+  The project evolves into a fully documented optimisation system with diagnostics, reflection, and repeatable logic.
+
+The project is continuous, with required components submitted across different modules. By the end of the programme, the outcome is a **portfolio‑ready artefact** supported by experimentation logs and reflective analysis.
+
+---
+
+## Bayesian Optimisation Approach and Notebook Overview
+
+The **entire optimisation logic and experimentation workflow** live in the Jupyter notebook located in the `notebook/` directory. This notebook was built from scratch in Week 1 using concepts learned on the course and was refined incrementally throughout the capstone.
+
+The notebook focuses on four core capabilities:
+
+- **Gaussian Process surrogate models** to predict outcomes and uncertainty  
+- **Acquisition strategies** to balance exploration and exploitation  
+- **Visual diagnostics** to interpret model behaviour and guide decisions  
+- **Iterative analysis** to adapt strategy as more data becomes available  
+
+Instead of relying on brute‑force sampling, the optimisation framework learns from prior results to guide future queries more efficiently.
+
+### Evolution of the optimisation strategy
+
+The optimisation approach evolved deliberately over time:
+
+- **Early phase**  
+  Broad exploration was prioritised to reduce uncertainty and understand how different input dimensions influenced outcomes. Performance was secondary to learning structure.
+
+- **Mid phase**  
+  Focus shifted toward improving surrogate fidelity. Enhanced modelling revealed ridges, boundary behaviour, and low‑impact dimensions. Exploration became targeted, and exploitation became justified.
+
+- **Late phase**  
+  The strategy prioritised discipline and confirmation. Exploration was reduced to targeted validation while exploitation focused on consolidating confidence rather than chasing marginal gains.
+
+This staged approach prevented premature convergence early on while allowing confident exploitation once the surrogate models stabilised. By the final stage, the optimisation process resembled a stabilised learning policy rather than an active search.
+
+---
 
 ## Timeline
-The project follows a structured 10-week execution plan:
 
-- Week-by-Week Plan
-- Week 1 (6–8 hours): Define project scope, success criteria and select dataset/tools (e.g., Python, scikit-learn). Milestone: Scope and dataset finalized.
-- Week 2 (8–10 hours): Explore dataset for missing values, distributions and data types. Milestone: Initial data understanding documented.
-- Week 3 (8–10 hours): Clean data, encode categorical variables, normalize features and split into training/testing sets. Milestone: Pre-processed dataset ready.
-- Week 4 (6–8 hours): Engineer new features and apply dimensionality reduction if needed. Milestone: Feature set finalised.
-- Week 5 (8–10 hours): Train simple models to establish baseline performance. Milestone: Baseline model performance established.
-- Week 6 (8–10 hours): Compare models using cross-validation to identify the best candidate. Milestone: Best-performing model selected.
-- Week 7 (10–12 hours): Select and apply methods to optimise model parameters. Milestone: Tuned model ready for final testing.
-- Week 8 (8–10 hours): Select and apply metrics for assessing performance. Milestone: Final model evaluation completed.
-- Week 9 (10–12 hours): Document methodology, create visualizations and interpret results. Milestone: First draft of documentation completed.
-- Week 10 (8–10 hours): Finalise report and presentation materials. Milestone: Project submitted and ready for review.
+The project followed a structured execution plan:
 
-## Methodology
-Key strategies include:
-- Feature Engineering: Create meaningful features and apply PCA for dimensionality reduction.
-- Model Combination: Use ensemble techniques inspired by the Netflix Prize to improve generalization.
-- Cross-Validation: Consider time-based splits and class balance for robust evaluation.
-- Optimisation: Reduce overfitting by adjusting batch sizes and learning rates.
-- Interpretability: Explore the use of tools to explain predictions and visualize feature importance.
-- Robust Testing: Evaluate model under noisy or incomplete inputs and synthetic data.
-- Tracking Progress: Maintain logs, use Git for version control and tools for experiment tracking.
-- Model Decisions: Switch models if performance gaps persist or refine based on error patterns.
+- **Week 1 (6–8 hours)**: Define scope, success criteria, and tools  
+- **Week 2 (8–10 hours)**: Initial exploration and uncertainty reduction  
+- **Week 3 (8–10 hours)**: Surrogate refinement and strategy improvement  
+- **Week 4 (6–8 hours)**: Structural diagnostics and sensitivity analysis  
+- **Week 5 (8–10 hours)**: Structured exploitation and refinement  
+- **Week 6 (8–10 hours)**: Robustness and stability checks  
+- **Week 7 (10–12 hours)**: Strategy stress testing  
+- **Week 8 (8–10 hours)**: Scale and efficiency analysis  
+- **Week 9 (10–12 hours)**: Consolidation and diagnostics  
+- **Week 10 (8–10 hours)**: Final refinement  
+- **Weeks 11–13**: Confirmation, reflection, and final evaluation  
 
-## Collaboration & Feedback
-- Peer Collaboration: Share insights and critique approaches with peers.
-- Office Hour Check-ins: Schedule regular meetings to discuss progress and challenges.
-- Online Forums: Use Kaggle and Stack Overflow for diverse input.
-- Feedback Logs: Record feedback and actions taken to improve reflective practice.
+---
 
-## Risk Management
-- Challenges: Overfitting, time constraints, tuning failures, data quality issues and technical errors.
-- Mitigation Strategies: 
-- Use cross-validation early.
-- Stick to milestones and time-box tasks.
-- Start with broad tuning ranges and refine.
-- Conduct thorough data exploration and preprocessing.
-- Use Git and backups to prevent data loss.
-- In addition the following approach to tracking progress have been identified:
-- Maintain a weekly checklist of tasks and milestones.
-- Log model configurations and metrics.
-- Use Git branches for experiments.
-- Reflect weekly to adjust plans and update risk register.
+## Methodological Principles
 
-## GitHub Portfolio Strategy
+The optimisation strategy was guided by the following principles:
+
+- Surrogate modelling to learn efficiently from limited evaluations  
+- Adaptive exploration and exploitation rather than fixed rules  
+- Dimensional relevance analysis to reduce unnecessary complexity  
+- Visual interpretation to support transparent decision making  
+- Incremental refinement over aggressive optimisation  
+- Robustness and confidence over peak chasing  
+
+These principles reflect real‑world ML systems where uncertainty, cost, and interpretability play critical roles.
+
+---
 
 ## Project Structure
-
-Below is a high-level overview of the project’s folder organization. This structure is designed to separate documentation, code, experiments, and results for clarity and ease of collaboration. Key model documentation is provided in the `model_info` folder.
-
-
 ```
 capstone_project/
 ├── model_info/
 │   ├── BBO_Capstone_Datasheet.md
 │   └── BBO_Capstone_Model_Card.md
 ├── notebook/
-│   └── Capstone Consolidated Strategy.ipynb
+│   └── Capstone Consolidated Strategy.ipynb # Core Bayesian optimisation workflow and experimentation notebook
 ├── runs/
 │   ├── week_1/
 │   ├── week_2/
@@ -78,12 +123,25 @@ capstone_project/
 │   ├── week_10/
 │   ├── week_11/
 │   └── week_12/
-├── README.md
-├── .git/
-└── .venv/
+├── LICENSE.md
+└── README.md
 ```
+---
 
-### Model Documentation
+## Outcome and Relevance
 
-- [Model Datasheet](model_info/BBO_Capstone_Datasheet.md)
-- [Model Card](model_info/BBO_Capstone_Model_Card.md)
+This project demonstrates that **Bayesian optimisation is most effective when treated as a learning process rather than a simple search problem**. By analysing data, adjusting strategies, and visualising behaviour throughout the process, the framework efficiently identifies high‑quality solutions in settings where exhaustive experimentation would be impractical.
+
+**Key take‑away:** performance gains came less from aggressive optimisation and more from disciplined learning, uncertainty management, and strategic restraint.
+
+The approach generalises to real‑world ML applications such as hyperparameter tuning, resource allocation, predictive maintenance, and other optimisation tasks under uncertainty.
+
+---
+
+## License
+
+This project is licensed under the Creative Commons
+Attribution–NonCommercial–NoDerivatives 4.0 International License.
+See the LICENSE file for details.
+
+---
