@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-01-09T20:21:40.507092Z",
+  "best_score": -0.18739747205848745,
+  "best_hp_decoded": {
+    "hidden_layers": [
+      256,
+      256
+    ],
+    "learning_rate": 0.003002537332073766,
+    "weight_decay": 1.5990401621411208e-06
+  },
+  "hp_dataset_size": 13,
+  "random_state": 0
+}

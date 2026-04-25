@@ -128,6 +128,28 @@ capstone_project/
 ```
 ---
 
+## How to Run the Notebook
+
+1. **Set up Python environment**  
+   - Install Python 3.10+ and create a virtual environment (recommended).
+   - Install required packages using `pip install -r requirements.txt` (if available) or manually install dependencies such as numpy, pandas, scikit-learn, matplotlib, and jupyter.
+
+2. **Launch Jupyter Notebook**  
+   - Activate your environment.
+   - Run `jupyter notebook` in the project root or `notebook/` directory.
+
+3. **Open the notebook**  
+   - In your browser, open `notebook/Capstone Consolidated Strategy.ipynb`.
+
+4. **Run all cells in order**  
+   - Start from the top and execute each cell sequentially for best results.
+   - Follow prompts in the notebook for any required configuration or data input.
+
+5. **Review outputs and visualizations**  
+   - Use the provided diagnostics and plots to interpret results and guide further experimentation.
+
+---
+
 ## Outcome and Relevance
 
 This project demonstrates that **Bayesian optimisation is most effective when treated as a learning process rather than a simple search problem**. By analysing data, adjusting strategies, and visualising behaviour throughout the process, the framework efficiently identifies high‑quality solutions in settings where exhaustive experimentation would be impractical.
